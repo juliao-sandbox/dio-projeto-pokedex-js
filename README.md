@@ -1,6 +1,6 @@
 # DIO - Projeto: Construindo uma Pokédex com JavaScript
 
-O projeto é uma página HTML simples que exibe uma vitrine de Pokemons, com nome, imagem, etc. A página foi estilizada com CSS e os dados dos Pokemons são carregados da [PokeAPI](https://pokeapi.co) utilizando JavaScript.
+O projeto é uma página HTML simples que exibe uma vitrine de Pokemons, com nome, imagem, etc. A página foi estilizada com CSS e os dados dos Pokemons são carregados da [PokeAPI](https://pokeapi.co) utilizando JavaScript. Foi adicionada a página de detalhes que é aberta ao clicar no Pokemon da lista.
 
 
 ---
