@@ -78,6 +78,33 @@
     background-color: #f9aec7;
 }
 
+progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+    background: currentColor;
+}
+
+progress::-webkit-progress-bar {
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background: currentColor;
+    border-radius: 5px;
+}
+
+progress.stat-low {
+    color: #ee8484;
+}
+
+progress.stat-high {
+    color: #058d39;
+}
+
 .pokemon {
     display: flex;
     flex-direction: column;
@@ -87,7 +114,8 @@
     color: #fff;
 }
 
-.pokemon .number {
+.pokemon .number,
+.pokemon-detail .number {
     color: #000;
     opacity: .3;
     text-align: right;
@@ -95,7 +123,8 @@
     cursor: default;
 }
 
-.pokemon .name {
+.pokemon .name,
+.pokemon-detail .name {
     color: #fff;
     margin-bottom: 0;
     text-transform: capitalize;
@@ -115,7 +144,8 @@
     list-style: none;
 }
 
-.pokemon .detail .types .type {
+.pokemon .detail .types .type,
+.pokemon-detail .type {
     color: #fff;
     padding: .25rem .5em;
     margin: .25rem 0;
@@ -125,6 +155,15 @@
     text-align: center;
     cursor: default;
 }
+
+.pokemon-detail .type {
+    padding: .35rem 1.5em;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    filter: brightness(0.9);
+    text-transform: capitalize;
+}
+
 .pokemon .detail img {
     max-width: 100%;
     height: 100px;
@@ -140,7 +179,8 @@
     padding: 1rem;
 }
 
-.pagination button {
+.pagination button,
+.go-back {
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
@@ -148,6 +188,53 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+.go-back {
+    padding: .35rem .75rem;
+    margin: .25rem 0;
+    font-size: .9rem;
+}
+
+.pokemon-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon-detail .number {
+    font-size: 1rem;
+}
+
+.pokemon-detail .name {
+    color: #464646;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.pokemon-detail img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.pokemon-detail .stats {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1.2rem;
+    border: #9b9b9b 1px solid;
+    border-radius: 10px;
+}
+
+.pokemon-detail .stats .stat {
+    text-transform: capitalize;
+}
+
+.pokemon-detail .stats .stat {
+    text-align: right;
 }
 
 @media screen and (min-width: 300px) {
