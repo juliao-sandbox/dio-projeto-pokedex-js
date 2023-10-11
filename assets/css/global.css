@@ -5,7 +5,7 @@
 
 body {
     background-color: #f6f8fc;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .content {

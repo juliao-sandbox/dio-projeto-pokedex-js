@@ -9,6 +9,11 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
     pokemon.picture = pokeDetail.sprites.other.dream_world.front_default
+    const stats = pokeDetail.stats.map((item) => ({
+        ['name']: item.stat.name,
+        ['value']: item.base_stat
+    }))
+    pokemon.stats = stats
 
     return pokemon
 }

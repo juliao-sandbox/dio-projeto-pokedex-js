@@ -128,7 +128,6 @@ progress.stat-high {
     color: #fff;
     margin-bottom: 0;
     text-transform: capitalize;
-    cursor: default;
 }
 
 .pokemon .detail {
@@ -153,7 +152,6 @@ progress.stat-high {
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
-    cursor: default;
 }
 
 .pokemon-detail .type {
@@ -164,6 +162,7 @@ progress.stat-high {
     font-size: 1.1rem;
     filter: brightness(0.9);
     text-transform: capitalize;
+    cursor: default;
 }
 
 .pokemon .detail img {
@@ -185,17 +184,16 @@ progress.stat-high {
 .go-back {
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
+    font-size: .9rem;
     color: #fff;
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .go-back {
     padding: .35rem .75rem;
-    margin: .25rem 0;
-    font-size: .9rem;
     justify-self: start;
 }
 
@@ -212,6 +210,7 @@ progress.stat-high {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .pokemon-detail header {
@@ -255,6 +254,7 @@ progress.stat-high {
     margin-top: 1.2rem;
     border: #9b9b9b 1px solid;
     border-radius: 10px;
+    cursor: default;
 }
 
 .pokemon-detail .stats .stat {
@@ -273,7 +273,7 @@ progress.stat-high {
     margin-top: -250px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    background-color: #53dfa5;
+    /* background-color: #53dfa5; */
     z-index: -1;
 }
 
@@ -286,7 +286,7 @@ progress.stat-high {
         margin-top: -260px;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
-        background-color: #53dfa5;
+        /* background-color: #53dfa5; */
         z-index: -1;
     }
 
